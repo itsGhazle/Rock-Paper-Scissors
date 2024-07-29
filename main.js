@@ -10,7 +10,6 @@ for (let i = 1; i < 5; i++) {
       (humanChoice === "scissors" && computerChoice === "paper")
     ) {
       humanScore++;
-      console.log("hhh");
       console.log(` ${humanChoice} beats ${computerChoice}`);
     } else if (
       (computerChoice === "paper" && humanChoice === "rock") ||
@@ -22,13 +21,10 @@ for (let i = 1; i < 5; i++) {
     } else {
       console.log(`${computerChoice} and ${humanChoice} are the same!`);
     }
-    console.log(humanChoice, computerChoice);
   }
 
   function playGame() {
     playRound(humanSelection, computerSelection);
-    console.log(humanScore, computerScore);
-
     if (humanScore == computerScore) {
       console.log(`It is a tie!`);
     } else if (humanScore > computerScore) {
